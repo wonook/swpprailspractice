@@ -10,8 +10,14 @@
   </thead>
 
   <tbody>
+    <tr>
+      <td>ID</td>
+      <td>Title</td>
+      <td>Actions</td>
+    </tr>
     <% @articles.each do |article| %>
       <tr>
+        <td><%= article.id %></td>
         <td><%= article.title %></td>
         <td><%= link_to 'Show', article %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
